@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Смак часу: сучасний гастрономічний простір на першому поверсі ЖК TRIIINITY у Києві. Ранкова кава, денний ланч, вечірній лоунж.">
+<title>Смак часу: ресторан у ЖК TRIIINITY, Київ</title>
+<link rel="icon" href="assets/logo-dark.png">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M15 36C22 33 28 27 33 13" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M33 13c-3 1-4 4-3 7 3-1 4-4 3-7zM29 21c-3 0-5 3-4 6 3 0 5-3 4-6zM24 28c-3 0-5 2-5 5 3 1 5-2 5-5zM33 13c3 2 3 5 1 8-3-1-3-5-1-8zM30 22c3 1 4 4 2 7-3-1-3-4-2-7z" fill="currentColor"/></symbol></svg>
+<header id="hd"><div class="w"><a class="lg" href="#home"><img class="lgi" data-lg="h" alt="Смак часу"></a><nav><a href="#home">Простір</a><a href="#menu">Меню</a><a href="#order">Замовити</a><a href="#interior">Інтер’єр</a><a href="#contacts">Контакти</a></nav></div></header>
+<main>
+<div class="hero" id="hero" data-slot="d">
+<div class="sky s-m"></div><div class="sky s-d"></div><div class="sky s-e"></div><div class="glass"></div>
+<div class="w"><div class="hc">
+<div><h1 id="h1"></h1><p class="sn" id="sn"></p><div class="hb" id="hcta"><a class="btn o" href="#menu">Меню</a><a class="btn" href="#contacts">Забронювати</a></div></div>
+<div class="lk" id="lk" role="group" aria-label="Час доби"><button data-k="m">Ранок<small>08:00–12:00</small></button><button data-k="d">День<small>12:00–17:00</small></button><button data-k="e">Вечір<small>17:00–23:00</small></button></div>
+</div></div>
+<p class="st" id="st"></p>
+</div>
+
+<div data-v="home"><section><div class="w">
+<h2 class="ld">Сучасний гастрономічний простір на першому поверсі преміального ЖК TRIIINITY</h2>
+<div class="fx">
+<div><h3>Адаптивний бістро-бар</h3><p>Настрій, меню та освітлення підлаштовуються під ритм життя мешканців комплексу й гостей міста.</p></div>
+<div><h3>Біофільний мінімалізм</h3><p>Натуральний камінь, панорамне скління, живі дерева, акцентна водяна стіна та м’яке хвилясте зонування.</p></div>
+<div><h3>Від кави до лоунжу</h3><p>Спешалті-кава без поспіху зранку, затишна фріланс-зона вдень, камерний лоунж з авторськими коктейлями й вином увечері.</p></div>
+</div>
+<div id="evs"></div>
+</div></section></div>
+
+<div data-v="menu" hidden><section class="mn"><div class="w bkw">
+<div class="bn" id="jp"><button data-b="0">Обкладинка</button><button data-b="1">Дегустаційний сет</button><button data-b="2">Сніданки, закуски, салати</button><button data-b="3">Основні страви, десерти, бар</button></div>
+<div class="stage" id="stg"><div class="book c0" id="bk"></div></div>
+<div class="sl2" id="sl2"></div>
+<div class="bn"><button id="pv2">Назад</button><span id="bl"></span><button id="nx">Далі</button></div>
+<p class="nt" style="margin:0">Натисніть на край сторінки або проведіть пальцем, щоб погортати.</p>
+<a class="btn" href="#order">Замовити з меню</a>
+</div></section></div>
+
+<div data-v="order" hidden><section class="mn"><div class="w od">
+<div><div class="tabs" id="cats"></div><div id="gps"></div></div>
+<aside class="pn" id="pn"><h3>Ваш рахунок</h3>
+<div id="ls"></div>
+<div class="ln" style="border-top:1px solid var(--line);margin-top:8px;padding-top:10px"><span>Сума</span><b id="sb"></b></div>
+<label>Чайові на ваш розсуд<div class="seg" id="tp"><button data-t="0" aria-pressed="true">Без</button><button data-t="5" aria-pressed="false">5%</button><button data-t="10" aria-pressed="false">10%</button><button data-t="15" aria-pressed="false">15%</button><button data-t="c" aria-pressed="false">Своя сума</button></div></label>
+<input id="tc" type="number" min="0" inputmode="numeric" placeholder="Сума чайових, грн" hidden>
+<div class="ln"><span>Чайові</span><b id="tv"></b></div>
+<div class="fr"><label>Стіл<input id="tb" placeholder="№ або з собою"></label><label>Гостей<select id="gs"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></label></div>
+<label>Оплата<div class="seg" id="py"><button data-p="Картка" aria-pressed="true">Картка</button><button data-p="Готівка" aria-pressed="false">Готівка</button></div></label>
+<label>Побажання<input id="nt" placeholder="Наприклад: без цибулі"></label>
+<div class="tt"><span>До сплати</span><b id="tot"></b></div>
+<div class="ln" id="pp" hidden><span>На одну особу</span><b id="pv"></b></div>
+<button class="btn" id="pdf" style="width:100%">Завантажити PDF-рахунок</button>
+<button class="lnk" id="clr">Очистити замовлення</button>
+<p class="nt" id="msg">Рахунок формується на вашому пристрої. Замовлення на кухню не надсилається. Чайові добровільні й не входять у вартість страв.</p>
+</aside></div></section></div>
+<button class="fab btn" id="fab" hidden></button>
+<div id="bd"></div>
+
+<div data-v="interior" hidden><section><div class="w">
+<h2 class="ld">Індустріальний дизайн і теплі природні елементи</h2>
+<p style="max-width:680px;color:var(--mut);margin:20px 0 0">Фактурні бетонні стіни, м’яке золото підсвіток, меблі глибокого оливкового та бежевого відтінків, жива зелень. Приглушене світло дизайнерських світильників і свічки на столах створюють камерну атмосферу.</p>
+<div class="gal" id="gal"></div>
+</div></section></div>
+
+<div data-v="contacts" hidden><section class="bk"><div class="w ct">
+<div>
+<h2>Забронювати стіл</h2>
+<form id="f">
+<div class="fr"><label>Ім’я<input id="nmi" required autocomplete="name"></label><label>Телефон<input type="tel" required autocomplete="tel"></label></div>
+<div class="fr"><label>Дата<input id="dt" type="date" required></label><label>Час<input type="time" min="08:00" max="23:00" value="19:00" required></label></div>
+<label>Кількість гостей<select><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></label>
+<label>Коментар<textarea rows="3"></textarea></label>
+<button class="btn" type="submit">Забронювати</button>
+</form>
+<div id="ok" hidden><h3>Дякуємо, <span id="nm"></span></h3><p>Заявку отримано. Ми зателефонуємо, щоб підтвердити бронь.</p></div>
+</div>
+<div>
+<h2>Як нас знайти</h2>
+<dl>
+<dt>Адреса</dt><dd>вул. Василя Тютюнника, 39, Київ<br>ЖК TRIIINITY, перший поверх</dd>
+<dt>Метро</dt><dd>«Палац Україна»</dd>
+<dt>Години роботи</dt><dd>Щодня з 08:00 до 23:00</dd>
+<dt>Телефон</dt><dd>+38 0XX XXX XX XX</dd>
+</dl>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=%D0%B2%D1%83%D0%BB.+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8F+%D0%A2%D1%8E%D1%82%D1%8E%D0%BD%D0%BD%D0%B8%D0%BA%D0%B0+39+%D0%9A%D0%B8%D1%97%D0%B2" target="_blank" rel="noopener">Прокласти маршрут</a>
+</div>
+</div></section></div>
+</main>
+<footer><div class="w">
+<div class="fg"><div class="gh">Знайди нас</div>
+<div class="fi"><p>вул. Василя Тютюнника, 39, Київ</p><p>Щодня з 08:00 до 23:00</p><p>+38 0XX XXX XX XX</p>
+<div class="n"><a href="#home">Простір</a><a href="#menu">Меню</a><a href="#order">Замовити</a><a href="#interior">Інтер’єр</a><a href="#contacts">Контакти</a></div></div></div>
+<div class="cp"><img class="lgi" data-lg="l" alt="Смак часу" style="height:84px;margin-bottom:14px">© 2026 Ресторан «Смак часу»</div>
+</div></footer>
+<script src="js/vendor/jspdf.umd.min.js"></script>
+<script src="js/vendor/html2canvas.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
